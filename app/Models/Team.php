@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Team extends Model
 {
     use HasFactory;
+    public $timestamps = false;
 
     /**
      * Define a many-to-many relationship for racers.
