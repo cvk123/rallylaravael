@@ -13,10 +13,7 @@ Route::get('/', function () {
     return view('welcome', [
         'teams' => $teams
     ]);
-    $members = DB::table('members')->get();
-    return view('welcome', [
-        'members' => $members
-    ]);
+   
 });
 
 Route::get('/mform', function () {
